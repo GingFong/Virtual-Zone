@@ -136,12 +136,12 @@ nav li a:hover:after {
 
 .container .slide-container .slide .content h3 {
   font-size: 35px;
-  color: #333;
+  color: #000000;
 }
 
 .container .slide-container .slide .content p {
   font-size: 16px;
-  color: #666;
+  color: #000000;
   padding: 10px 0;
 }
 
@@ -167,11 +167,15 @@ nav li a:hover:after {
 }
 
 .container .slide-container:nth-child(2) .slide {
-  background: linear-gradient(90deg, #24292e 70%, #d54038 30.1%);
+  background: rgb(11,11,13);
+  background: radial-gradient(circle, rgba(164,158,242,1), 0%rgba(11,11,13,1) 35%,);
 }
 
+
 .container .slide-container:nth-child(1) .slide {
-  background: linear-gradient(90deg, #24292e 70%, #86f391 30.1%);
+  background: rgb(11,11,13);
+  background: radial-gradient(circle, rgba(164,158,242,1), 0%rgba(11,11,13,1) 35%,);
+
 }
 
 .container #prev,
