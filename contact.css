@@ -1,0 +1,21 @@
+title {
+    text-decoration-color: black;
+    text-align: center;
+}
+
+.background {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}

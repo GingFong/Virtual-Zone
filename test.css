@@ -1,0 +1,95 @@
+.background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.background p {
+    flex-basis: 50%;
+}
+
+form {
+    flex-basis: 40%;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+/* form*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="reset"]:hover {
+    background-color: #f44336;
+}
+
+.form-message {
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-message.success {
+    color: green;
+    display: block;
+}
+
+.form-message.error {
+    color: red;
+    display: block;
+}
+
+body {
+    overflow: scroll;
+}
