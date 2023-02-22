@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Game Library</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5A189A;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .game {
+            display: inline-block;
+            width: 300px;
+            margin: 25px;
+            border: 1px solid #000000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            background-color: #240046;
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .game img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .game h2 {
+            margin: 10px;
+        }
+
+        .game p {
+            margin: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar-->
+
+    <a href="Homepage.html"><img src="img/logo1.png" class="logo"></a>
+    <section class="nav">
+        <nav>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="bestellen.html">Bestellen</a></li>
+                    <li><a href="library.html">Bibliotheek</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <a href="login/login.php"><img class="profilelogo" src="img/profilelogoNBACK.png"
+                            alt="profilelogo"></a>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Einde Navbar-->
+
+    <h1>My Video Game Library</h1>
+    <div class="game">
+        <img src="https://via.placeholder.com/300x200" alt="Game Cover">
+        <h2>Game Title</h2>
+        <p>Platform: Xbox One<br>
+            Genre: Action</p>
+    </div>
+    <div class="game">
+        <img src="https://via.placeholder.com/300x200" alt="Game Cover">
+        <h2>Game Title</h2>
+        <p>Platform: PlayStation 4<br>
+            Genre: Adventure</p>
+    </div>
+    <div class="game">
+        <img src="https://via.placeholder.com/300x200" alt="Game Cover">
+        <h2>Game Title</h2>
+        <p>Platform: Nintendo Switch<br>
+            Genre: Puzzle</p>
+    </div>
+    <!-- Add more game entries here -->
+</body>
+
+</html>
