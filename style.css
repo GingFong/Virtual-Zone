@@ -208,6 +208,16 @@ h4{
   vertical-align: top;
   overflow: hidden;
 }
+                .game:hover,
+                .game:focus {
+                  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                  transform: scale(1.05);
+                }
+        
+                .game:active {
+                  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+                  transform: scale(0.95);
+                }
 
 .game img {
   width: 100%;
