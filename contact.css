@@ -12,12 +12,14 @@ title {
 
 .center {
     text-align: center;
+    color: white;
 }
 
 p {
     color: black;
-        text-align: left;
+    text-align: center;
     font-size: 24px;
+    color: white;
 }
  h1 {
      text-align: center;
