@@ -92,6 +92,12 @@ nav li a:hover:after {
   width: 150px;
   z-index: 3000;
 }
+.cartlogo{
+  position: fixed;
+right: 70px;
+  z-index: 3000;
+  width: 30px;
+}
 .profilelogo{
   width: 30px;
 }
