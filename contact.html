@@ -29,48 +29,28 @@
     </nav>
   </section>
 
-         <h1>Over ons</h1>
-        <img src="img/gaming.png" width="1519" height="400px">
+         <h1>Contact Us</h1>
+        <img src="img/gaming.png" width="1519" height="300px">
         
-       
-        <div class="center">
-            <br>
-            
-            <br>
-            <p>Virtual Zone is een online game webshop waar je terecht kunt voor de nieuwste games en game-accessoires. Wij
-                zijn
-                een team van gepassioneerde gamers die hun kennis en ervaring inzetten om jou te voorzien van de beste
-                producten
-                en service.Onze webshop biedt een uitgebreid assortiment aan games voor alle bekende consoles en platforms.
-                Of
-                je nu op
-                zoek bent naar de nieuwste releases of juist de klassiekers wilt herbeleven, bij Virtual Zone vind je het
-                allemaal. Daarnaast hebben we ook een ruim aanbod aan game-accessoires zoals controllers, headsets en gaming
-                muizen.
-                Bij Virtual Zone staat klanttevredenheid hoog in het vaandel. Wij streven er altijd naar om de beste service
-                te
-                bieden aan onze klanten. Zo kun je bij ons terecht voor deskundig advies en staan we altijd klaar om vragen
-                te
-                beantwoorden en problemen op te lossen. Of je nu een doorgewinterde gamer bent of net begint met gamen,
-                Virtual
-                Zone is dé plek waar je moet zijn voor
-                de beste games en accessoires. Wij zijn trots op wat we doen en kijken er naar uit om jou als klant te mogen
-                verwelkomen.</p>
-        </div>
-        <p></p>   <p></p>   <p></p>   <p></p>   <p></p>   <p></p>   <p></p>   <p></p>
-        
-        <form action="send_email.php" method="post">
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" name="naam"><br>
-        
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email"><br>
-        
-            <label for="bericht">Bericht:</label>
-            <textarea id="bericht" name="bericht"></textarea><br>
-        
-            <input type="submit" value="Verzenden">
-        </form>
+        <main>
+          
+          <p>Fill out the form below to send us a message:</p>
+          <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Or reach us at:</h3>
+            <br><p1><strong>Address:</strong> 123 Main St, Anytown USA</p1>
+          <br>  <p1><strong>Phone:</strong> 555-555-1234</p1>
+           <br> <p1><strong>Email:</strong> info@gameshop.com</p1>
+          </div>
+        </main>
         <!-- Footer-->
         
        
