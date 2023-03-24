@@ -1,36 +1,73 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="login.php">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
 </head>
+<a href="Homepage.html"><img src="img/logo1.png" class="logo"></a>
+  <section class="nav">
+    <nav>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="library.html">Bibliotheek</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          
+          <a href="bestellen.html"><img class="cartlogo" src="img/cart.png" alt="cart"></a>
+          <a href="login.php"><img class="profilelogo" src="img/Profile.png" alt="profilelogo"></a>
+          <script src="cart.js" defer></script>
+        </ul>
+      </div>
+    </nav>
+  </section>
 <body>
-<h2>Login Form</h2>
+	<div class="login-box">
+		<h1>Login</h1>
+		<form method="post" action="login.php">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" placeholder="Enter your username">
 
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password">
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-  </form>
- </body>
+			<input type="submit" name="submit" value="Login">
+		</form>
+	</div>
+</body>
 </html>
+
+
+<?php
+
+session_start();
+
+if(isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Database connection
+    $conn = mysqli_connect("localhost", "root", "", "login_system");
+    
+    // Check connection
+    if(!$conn) {
+        die("Connection failed: ".mysqli_connect_error());
+    }
+
+    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+
+    // Check if user exists in database
+    if(mysqli_num_rows($result) > 0) {
+        $_SESSION['username'] = $username;
+        header("Location: dashboard.php");
+    } else {
+        echo "<script>alert('Invalid username or password');</script>";
+    }
+
+    mysqli_close($conn);
+}
+
+?>
