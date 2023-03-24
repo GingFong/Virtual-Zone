@@ -1,13 +1,22 @@
+.login-box, .dashboard-box {
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
 
 .login-box {
-    width: 300px;
     height: 300px;
     background: #240046;
     color: #333;
     padding: 20px;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.dashboard-box {
+    height: 250px;
+    background: #240046;
+    color: #333;
+    padding: 20px;
 }
 
 h1 {
@@ -17,6 +26,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 label {
@@ -24,20 +34,23 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="password"] {
-    padding: 5px;
+input[type="text"], input[type="password"], input[type="submit"] {
+    padding: 5px 10px;
     border-radius: 5px;
     border: none;
     margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
     color: #000000;
 }
 
 input[type="submit"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
     background: #7B2CBF;
     color: #ffffff;
     cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #333;
 }
