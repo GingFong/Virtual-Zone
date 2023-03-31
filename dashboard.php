@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once("nav.php")
+?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-
-<body>   
-   <!-- Navbar-->
-   <a href="Homepage.html"><img src="img/logo1.png" class="logo"></a>
-  <section class="nav">
-    <nav>
-
-      <div class="nav-links" id="navLinks">
-        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="Homepage.html">Home</a></li>
-          <li><a href="library.html">Bibliotheek</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <a href="bestellen.html"><img class="cartlogo" src="img/cart.png" alt="cart"></a>
-          <a href="login.php"><img class="profilelogo" src="img/Profile.png" alt="profilelogo"></a>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
-    <!-- Einde Navbar-->
 <?php
 
 session_start();

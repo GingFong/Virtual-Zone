@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="login.css">
-</head>
-<a href="Homepage.html"><img src="img/logo1.png" class="logo"></a>
-  <section class="nav">
-    <nav>
+<?php
+include_once("nav.php")
+?>
 
-      <div class="nav-links" id="navLinks">
-        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="Homepage.html">Home</a></li>
-          <li><a href="library.html">Bibliotheek</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          
-          <a href="bestellen.html"><img class="cartlogo" src="img/cart.png" alt="cart"></a>
-          <a href="login.php"><img class="profilelogo" src="img/Profile.png" alt="profilelogo"></a>
-          <script src="cart.js" defer></script>
-        </ul>
-      </div>
-    </nav>
-  </section>
 <body>
 	<div class="login-box">
 		<h1>Login</h1>
