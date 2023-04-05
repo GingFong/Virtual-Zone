@@ -51,9 +51,11 @@ include_once("nav.php")
     </div>
     <!-- Add more game entries here -->
 </body>
-   <!-- Footer-->
+  
 
-   <footer class="footer">
+<!-- Footer-->
+
+<footer class="footer">
     <div class="containerr">
       <div class="row">
         <div class="footer-col">
@@ -89,4 +91,5 @@ include_once("nav.php")
 
   <!-- Einde Footer-->
 
-</html>
+
+  </html>
