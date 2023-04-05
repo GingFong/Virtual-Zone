@@ -1,7 +1,7 @@
 <?php
 include_once("nav.php")
 ?>
-
+<link rel="stylesheet" type="text/css" href="login.css">
 <body>
 	<div class="login-box">
 		<h1>Login</h1>
