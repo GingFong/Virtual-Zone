@@ -31,18 +31,16 @@
 
     <!-- Einde Navbar-->
 
-    <header>
+    <section class="nav2">
         <nav>
         <input id="hamburger" type="checkbox" />
         <label class="hamburger_btn" for="hamburger">
         <span></span>
         </label>
         <ul class="hamburger_menu">
-        <li><a class="menu_item" href="index.php">Home</a></li>
-        <li><a class="menu_item" href="projecten.php">Projecten</a></li>
-        <li><a class="menu_item" href="projecten.php">Services</a></li> 
-        <li><a class="menu_item" href="profiel.php">Profiel</a></li> 
-        <li><a class="menu_item" href="inloggen.php">Inloggen</a></li> </ul>
+        <li><a href="Homepage.php">Home</a></li>
+        <li><a href="library.php">library</a></li>
+        <li><a href="Contact.php">Contact</a></li> </ul>
         
         </nav>
-        </header>
+    <section class="nav2">

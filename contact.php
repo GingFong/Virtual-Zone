@@ -1,7 +1,7 @@
 <?php
 include_once("nav.php")
 ?>
-
+<link rel="stylesheet" href="contact.css">
 
          <h1>Contact Us</h1>
         <img src="img/gaming.png" width="1519" height="300px">
