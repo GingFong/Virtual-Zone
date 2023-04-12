@@ -39,12 +39,7 @@ class SignupContr extends Signup
         }
         if ($this->pwdMatch() == false) {
             // echo "Passwords don't match!";
-            header("location: ../index.php?error=passwordmatch");
-            exit();
-        }
-        if ($this->uidTakenCheck() == false) {
-            // echo "Username or email taken!";
-            header("location: ../index.php?error=useroremailtaken");
+            header("location: ./Homepage.php?error=passwordmatch");
             exit();
         }
 
@@ -94,14 +89,5 @@ class SignupContr extends Signup
         }
         return $result;
     }
-    private function uidTakenCheck()  //deze functie controleert of de gebruikersnaam al in gebruik is.
-    {
-
-        if (!$this->checkUser($this->username, $this->email)) {
-            $result = false;
-        } else {
-            $result = true;
-        }
-        return $result;
-    }
+  
 }

@@ -25,7 +25,7 @@ class Signup extends dbh
     // de methode checkUser wordt gebruikt om te controleren of de gebruiker al bestaat.
     protected function checkUser($username, $email)
     {
-        $sql = "SELECT FROM users WHERE username=? OR email=?;";
+        $sql = "SELECT * FROM users WHERE username=? OR email=?;";
         $stmt = $this->connect()->prepare($sql);
 
 
