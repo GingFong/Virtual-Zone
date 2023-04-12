@@ -31,6 +31,25 @@ include_once("nav.php")
 <?php
 
 
+if (isset($_POST["submit"])) {
+    // Grabbing the data
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $pwdrepeat = $_POST["pwdrepeat"];
+    $email = $_POST["email"];
+
+    // Instantiate Signupcontr class
+    include("./classes/dbh.classes.php");
+    include "./classes/signup.classes.php";
+    include "./classes/signup-contr.classes.php";
+    $signup = new SignupContr($username, $password, $pwdrepeat, $email);
+
+    // Running error handlers and user signup
+    $signup->signupUser();
+    // Going back to the front page
+    header("location: ../Homepage.php?error=none");
+}
+
 
 
 
